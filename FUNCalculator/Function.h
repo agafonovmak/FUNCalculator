@@ -8,7 +8,7 @@ protected:
 public:
 	char* getname()
 	{
-		return name;
+		return m_name;
 	}
 	virtual void Calcualte() = 0;
 	Function();
