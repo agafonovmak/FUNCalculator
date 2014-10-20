@@ -22,6 +22,6 @@ void LinearFunction::Calcualte()
 	cin >> m_a;
 	cout << "Enter b:";
 	cin >> m_b;
-	cout << m_name << " = " << m_a*m_x + m_b << endl;
+	cout << "y = " << m_a*m_x + m_b << endl;
 	return;
 }
