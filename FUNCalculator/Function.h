@@ -8,7 +8,7 @@ public:
 	char* GetName()	{return m_name;}
 	float GetX()	{ return m_x; }
 	virtual void Calcualte() = 0;
-	Function();
+	Function(){ m_x = 0; };
 	~Function();
 };
 
