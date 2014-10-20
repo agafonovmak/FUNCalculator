@@ -3,6 +3,7 @@
 
 LinearFunction::LinearFunction()
 {
+	m_name = "y = ax + b";
 }
 
 
