@@ -2,14 +2,11 @@
 class Function
 {
 protected:
-	float m_a;
 	float m_x;
 	char* m_name;
 public:
-	char* getname()
-	{
-		return m_name;
-	}
+	char* GetName()	{return m_name;}
+	float GetX()	{ return m_x; }
 	virtual void Calcualte() = 0;
 	Function();
 	~Function();
