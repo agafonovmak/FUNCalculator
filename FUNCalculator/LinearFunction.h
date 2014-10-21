@@ -7,7 +7,7 @@ private:
 	float m_b;
 	float m_a;
 public:
-	void Calcualte();
+	void Calculate();
 	LinearFunction();
 	~LinearFunction();
 };

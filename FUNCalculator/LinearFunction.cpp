@@ -16,11 +16,13 @@ LinearFunction::~LinearFunction()
 {
 }
 
-void LinearFunction::Calcualte()
+void LinearFunction::Calculate()
 {
-	cout << "Enter a:";
+	cout << "Enter x: ";
+	cin >> m_x;
+	cout << "Enter a: ";
 	cin >> m_a;
-	cout << "Enter b:";
+	cout << "Enter b: ";
 	cin >> m_b;
 	cout << "y = " << m_a*m_x + m_b << endl;
 	return;

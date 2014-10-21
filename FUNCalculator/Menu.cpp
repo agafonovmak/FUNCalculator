@@ -31,9 +31,9 @@ int Menu::ask()
 	int option;
 	cout << "Enter number: ";
 	cin >> option;
-	while (option>0 && option<=m_ammount+1)
+	while (!(option>0 && option<=m_ammount+1))
 	{
-		cout << "Enter number: ";
+		cout << "Enter number (1-"<<m_ammount+1<<"): ";
 		cin >> option;
 	}
 	return option;
@@ -54,17 +54,19 @@ void Menu::print()
 void Menu::Run()
 {
 	int option;
+	
 	do
 	{
+		print();
 		option = ask();
-		calculate(option);
+		calculate(option-1);
 	} while (m_p[option]);
 }
 
 void Menu::calculate(int function)
 {
-	if (function>0 && function<=m_ammount)
+	if (function>=0 && function<=m_ammount)
 	{
-		m_p[function]->Calcualte();
+		m_p[function]->Calculate();
 	}
 }
