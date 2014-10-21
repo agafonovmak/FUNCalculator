@@ -21,7 +21,7 @@ void ExponentFunction::Calculate()
 	double member = 1;
 	double sum = 1;
 	int n = 1;
-	while (member >= 0, 000001)
+	while (member >= 0.00001)
 	{
 		member = member*m_x / n;
 		sum += member;
